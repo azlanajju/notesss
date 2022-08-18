@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mech.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+</head>
+<body>
+
+<h2>Select Semester</h2>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">SEMESTERS <i class="fa fa-list-alt"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#contact">3rd SEMESTER</a>
+     <a href="#home">4th SEMESTER</a>
+    <a href="#about">5th SEMESTER</a>
+    <a href="#contact">6th SEMESTER</a>
+     <a href="#about">7th SEMESTER</a>
+    <a href="#contact">8th SEMESTER</a>
+  
+  </div>
+</div>
+
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
